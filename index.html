@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Card Game</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="memory-game.css" />
+    <link rel="stylesheet" href="memory-game.css" />
+  </head>
+  <body>
+    <div class="row text-center justify-content-center" id="header">
+      <h2 class="text-center" id="title">Let's Match Those Pups!</h2>
+
+      <!--Start Button-->
+      <div class="col" id="buttons">
+        <div class="d-flex justify-content-center" id="restart">
+          <button
+            type="button"
+            class="col-2 btn btn-success"
+            id="gameStartButton"
+          >
+            Start Game
+          </button>
+          <button
+            type="button"
+            class="col-2 btn btn-primary"
+            id="restartGameButton"
+          >
+            Restart Game
+          </button>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-center text-center pt-2"
+        id="moves-container"
+      >
+        <h3 id="moves" class="col-4" id="moves">Moves: 0</h3>
+      </div>
+    </div>
+    <div class="middle" id="middle">
+      <div class="game-container">
+        <div class="memory-card" data-image="Mastiff">
+          <img class="front-face" src="mastiff.jpg" alt="Mastiff" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Mastiff">
+          <img class="front-face" src="mastiff.jpg" alt="Mastiff" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Lab">
+          <img class="front-face" src="lab.jpg" alt="Lab" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Lab">
+          <img class="front-face" src="lab.jpg" alt="Lab" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Golden">
+          <img class="front-face" src="golden.jpg" alt="Golden Retriever" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Golden">
+          <img class="front-face" src="golden.jpg" alt="Golden Retriever" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Goldendoodle">
+          <img class="front-face" src="goldendoodle.jpg" alt="Goldendoodle" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Goldendoodle">
+          <img class="front-face" src="goldendoodle.jpg" alt="Goldendoodle" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Corgi">
+          <img class="front-face" src="corgi.jpg" alt="Corgi" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Corgi">
+          <img class="front-face" src="corgi.jpg" alt="Corgi" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Bulldog">
+          <img class="front-face" src="bulldog.jpg" alt="Bulldog" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+        <div class="memory-card" data-image="Bulldog">
+          <img class="front-face" src="bulldog.jpg" alt="Bulldog" />
+          <img class="back-face" src="front.jpg" alt="White" />
+        </div>
+      </div>
+    </div>
+
+    <script src="memory-game.js"></script>
+    <script src="victory.js"></script>
+  </body>
+</html>
